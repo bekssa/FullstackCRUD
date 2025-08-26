@@ -12,7 +12,7 @@ namespace BookStore.DataAccess
     {
         public BookStoreDBContext(DbContextOptions<BookStoreDBContext> options) : base(options)
         {
-
+            
         }
 
         public DbSet<BookEntity> Books{ get; set; }

@@ -1,6 +1,7 @@
 ﻿using BookStore.core.Modal;
 using BookStore.DataAccess.Entities;
 using Microsoft.EntityFrameworkCore;
+using BookStore.core.Abstractions;
 using System;
 using System.Collections.Generic;
 using System.Linq;

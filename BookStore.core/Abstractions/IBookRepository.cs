@@ -1,6 +1,6 @@
 ﻿using BookStore.core.Modal;
 
-namespace BookStore.DataAccess.Repositories
+namespace BookStore.core.Abstractions
 {
     public interface IBookRepository
     {
