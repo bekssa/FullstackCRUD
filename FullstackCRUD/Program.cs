@@ -15,7 +15,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<BookStoreDBContext>(
     options =>
     {
-        options.UseNpgsql(builder.Configuration.GetConnectionString(nameof(BookStoreDBContext)));
+        options.UseNpgsql(builder.Configuration.GetConnectionString("BookStoreDBContext"));
     }
     );
 
@@ -37,7 +37,7 @@ app.UseAuthorization();
 
 app.MapControllers();
 
-app.UseCors(x => 
+app.UseCors(x =>
 {
     x.WithHeaders().AllowAnyHeader();
     x.WithOrigins("http://localhost:3000");

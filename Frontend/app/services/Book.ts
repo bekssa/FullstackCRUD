@@ -29,7 +29,7 @@ export const updateBook = async (id: number, book: BookRequest) => {
     })
 }
 
-const deleteBook = async (id: number) => {
+export const deleteBook = async (id: number) => {
     const res = await fetch("http://localhost:5148/Book/" + id, {
         method: "DELETE"
     })

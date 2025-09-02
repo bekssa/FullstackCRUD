@@ -1,3 +1,4 @@
+import '@ant-design/v5-patch-for-react-19';
 import Card from "antd/es/card/Card";
 import { Cardtitle } from "./Cardtitle";
 import { Button } from "antd/es/radio";
